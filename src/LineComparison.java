@@ -16,7 +16,6 @@ public class LineComparison {
         {
             int lengthOfLine2=(int) Math.sqrt((x22-x21) * (x22-x21) + (y22-y21) * (y22-y21));
             System.out.println("Length of Line2:"+lengthOfLine2);
-
         }
         static void equals()
         {
@@ -27,6 +26,17 @@ public class LineComparison {
                 System.out.println("Two lines are equal.");
             else
                 System.out.println("Two lines are not equal.");
+        }
+        static void compareTo()
+        {
+            int lengthOfLine1=(int) Math.sqrt((x12-x11) * (x12-x11) + (y12-y11) * (y12-y11));
+            int lengthOfLine2=(int) Math.sqrt((x22-x21) * (x22-x21) + (y22-y21) * (y22-y21));
+            if(lengthOfLine1 == lengthOfLine2)
+                System.out.println("Equal");
+            if(lengthOfLine1 > lengthOfLine2)
+                System.out.println("Line1 is greater than of Line2.");
+            if(lengthOfLine1 < lengthOfLine2)
+                System.out.println("Line1 is less than of Line2");
         }
 
 }
@@ -39,5 +49,6 @@ class Demo
         ob.length_line_1();
         ob.length_line_2();
         ob.equals();
+        ob.compareTo();
     }
 }
